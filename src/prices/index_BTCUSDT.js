@@ -47,11 +47,12 @@ async function start({ BUY_PRICE = 0, SELL_PRICE = 0, margin = 0 }) {
   Boolean(!isOpened)
     && Boolean(price <= BUY_PRICE)
     && Promise.resolve(buy(margin));
+    
   Boolean(isOpened)
     && Boolean(price >= SELL_PRICE)
     && Promise.resolve(sell(margin));
 }
 setInterval(() => {
-  start({ BUY_PRICE: 59320, SELL_PRICE: 59330, margin: 2 })
-  start({ BUY_PRICE: 59330, SELL_PRICE: 59340, margin: 1 })
+  start({ BUY_PRICE: 59320, SELL_PRICE: 59330, margin: 1 })
+  start({ BUY_PRICE: 59330, SELL_PRICE: 59340, margin: 2 })
 }, 3000);

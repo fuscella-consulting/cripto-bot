@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-btc": "node src/index_BTCUSDT",
-    "start-eth": "node src/index_ETHUSDT"
+    "start-btc": "node src/prices/index_BTCUSDT",
+    "start-eth": "node src/prices/index_ETHUSDT",
+    "start-btc-sma": "node src/prices/index_BTCUSDT",
+    "start-eth-sma": "node src/prices/index_ETHUSDT"
   },
   "keywords": [],
   "author": "",
