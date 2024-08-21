@@ -3,8 +3,8 @@ const axios = require('axios');
 
 const SYMBOL = 'ETHUSDT';
 const API_URL = 'https://testnet.binance.vision';
-const API_KEY = '';
-const API_SECRET_KEY = '';
+const API_KEY = 'EK9lz9smSa7uhb1lTA6jcfyiaXtkdbHlf6bnmviAFPAPq4nkI9Uf1Pc4TbWNnNah';
+const API_SECRET_KEY = '3P05bXieEGIrxQX2lZlOxiCTuBYIL1M4FOJt5fVFVBsBUpJL1FJob2RNIKMsAtqp';
 const QUANTITY = '0.001';
 
 const open = {

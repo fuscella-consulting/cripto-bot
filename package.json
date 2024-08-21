@@ -1,19 +1,28 @@
 {
-  "name": "bot",
+  "name": "cripto-bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "prepare": "husky",
     "start-btc": "node src/prices/index_BTCUSDT",
     "start-eth": "node src/prices/index_ETHUSDT",
     "start-btc-sma": "node src/prices/index_BTCUSDT",
     "start-eth-sma": "node src/prices/index_ETHUSDT"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "axios": "^1.7.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
